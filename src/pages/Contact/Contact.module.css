@@ -1,0 +1,157 @@
+.main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 100px);
+}
+.contact{
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    padding-top: 10px;
+}
+.head{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.head h1{
+    color:#ff1493;
+    font-weight: 700;
+    text-transform: uppercase;
+    /* letter-spacing: .5px; */
+    word-spacing: 10px;
+   
+}
+.head p{
+    text-align: center;
+    width: 70%;
+}
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.mainBox{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box{
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    flex-direction: column;
+    border:2px solid #ff1493;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+  transition: .5s ease-in-out;
+
+}
+.box:hover{
+  transform: translateX(-10px);
+  transition: .5s ease-in-out;
+}
+.box img{
+    margin-bottom: 5px;
+}
+.box h2{
+    text-align: center;
+    color: #ff1493;
+}
+.box  p{
+    text-align: center;
+    color: #111;
+}
+.form{
+    height: 100%;
+    width: 40%;
+    padding: 40px;
+    background: #fff;
+    color: #111;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 40px;
+}
+.form h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: #000;
+}
+.inputBox{
+    position: relative;
+    margin-top: 10px;
+    width: 100%;
+}
+.inputBox input,
+.inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    margin:  10px 0;
+    font-size: 16px;
+    border:none;
+    outline: none;
+    resize: none;
+    border-bottom: 2px solid #333;
+}
+.inputBox span{
+    position: absolute;
+    padding: 5px 0;
+    margin:  10px 0;
+    left: 0;
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+    color: #666;
+}
+.inputBox input:focus~span,
+.inputBox input:valid~span,
+.inputBox textarea:focus~span,
+.inputBox textarea:valid~span{
+    color:#ff1493;
+    font-size: 16px;
+    transform: translateY(-20px);
+}
+.inputBoxbtn  button{
+    font-size: 16px;
+    padding: 10px 10px;
+    background: #ff1493;
+    color: #fff;
+    outline: none;
+    border:none;
+}
+
+@media only screen and (min-width:759px) and (max-width:1173px){
+    .contact{
+ padding:0;
+}
+}
+@media only screen and (min-width:585px) and (max-width:759px){
+    .contact{
+ padding: 40px;
+ display: initial;
+}
+.container{
+    display: initial;
+}
+.form{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin: 30px auto;
+ height:300px;
+}
+
+.head p{
+    width: 100%;
+}
+}
